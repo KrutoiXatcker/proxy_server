@@ -47,29 +47,3 @@ bash
 Copy
 # Запуск с логированием
 ./bin/proxy_server -l proxy.log -e errors.log
-
-# Проверка работы
-curl -x http://localhost:8080 http://example.com
-
-📂 Структура проекта
-
-proxy_server/
-├── bin/                # Скомпилированный бинарник
-├── obj/                # Объектные файлы
-├── src/                # Исходный код
-│   ├── ClientConnectionHandler.cpp
-│   ├── ClientConnectionHandler.h
-│   ├── DataTunnel.cpp
-│   ├── DataTunnel.h
-│   ├── HttpRequestParser.cpp
-│   ├── HttpRequestParser.h
-│   ├── logger.cpp
-│   ├── logger.h
-│   ├── main.cpp
-│   ├── ProxyServer.h
-│   ├── SocketWrapper.cpp
-│   ├── SocketWrapper.h
-│   ├── TargetServerConnector.cpp
-│   └── TargetServerConnector.h
-├── makefile            # Файл для сборки
-└── README.md           # Этот файл
